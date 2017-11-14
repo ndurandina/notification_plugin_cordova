@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        id="com.mindlight.notifications"
+        version="0.0.1">
+
+  <name>Notifications</name>
+
+  <license>MIT</license>
+
+  <engines>
+    <engine name="cordova" version=">=6.5.0"/>
+    <engine name="cordova-android" version=">=6.1.2"/>
+    <engine name="cordova-ios" version=">=4.3.1"/>
+  </engines>
+
+  <dependency id="cordova-plugin-device" />
+  <dependency id="cordova-plugin-app-event" />
+
+  <asset src="www/notifications.js" target="js/notifications.js"/>
+
+  <js-module src="www/notifications.js" name="notifications">
+    <clobbers target="notifications" />
+  </js-module>
+
+  <platform name="android">
+
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="MdlNotifications">
+        <param name="android-package" value="com.mindlight.plugin.MdlNotifications"/>
+      </feature>
+    </config-file>
+
+    <source-file src="src/android/MdlNotifications.java" target-dir="src/com/mindlight/plugin/"/>
+  </platform>
+
+  <platform name="ios">
+    
+    <config-file target="config.xml" parent="/widget">
+      <feature name="MdlNotifications">
+        <param name="ios-package" value="MdlNotifications" />
+      </feature>
+    </config-file>
+
+    <header-file src="src/ios/MdlNotifications.h" target-dir="MdlNotificationsPlugin"/>
+    <source-file src="src/ios/MdlNotifications.m" target-dir="MdlNotificationsPlugin"/>
+  </platform>
+
+</plugin>

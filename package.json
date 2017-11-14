@@ -1,0 +1,32 @@
+{
+  "name": "com.harman.cordova.plugin.notifications",
+  "cordova_name": "Cordova LocalNotification Plugin",
+  "version": "0.0.1",
+  "description": "Notifications handling on iOS and Android",
+  "cordova": {
+    "id": "cordova-notifications-plugin",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=6.4.0"
+    },
+    {
+      "name": "cordova-ios",
+      "version": ">=4.3.0"
+    },
+    {
+      "name": "cordova-android",
+      "version": ">=6.0.0"
+    }
+  ],
+  "dependencies": {
+    "cordova-plugin-device": "*",
+    "cordova-plugin-app-event": ">=1.1.0"
+  },
+  "license": "MIT"
+}

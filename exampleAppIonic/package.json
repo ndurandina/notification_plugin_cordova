@@ -18,23 +18,24 @@
   ],
   "cordovaPlatforms": [],
   "dependencies": {
+    "com.harman.cordova.plugin.notifications": "file:..//mdl-cordova-plugin-notification",
+    "com.mindlight.notifications": "../mdl-cordova-plugin-notification",
     "cordova-android": "^6.3.0",
+    "cordova-plugin-app-event": "^1.2.1",
     "cordova-plugin-device": "^1.1.7",
-    "cordova-plugin-plantilla": "file:..//mdl-cordova-plugin-notification",
     "cordova-plugin-splashscreen": "^4.1.0",
     "cordova-plugin-statusbar": "^2.3.0",
     "cordova-plugin-whitelist": "^1.3.3",
-    "ionic-plugin-keyboard": "^2.2.1",
-    "mi-plugin": "../mdl-cordova-plugin-notification"
+    "ionic-plugin-keyboard": "^2.2.1"
   },
   "cordova": {
     "plugins": {
-      "mi-plugin": {},
       "ionic-plugin-keyboard": {},
       "cordova-plugin-whitelist": {},
       "cordova-plugin-statusbar": {},
       "cordova-plugin-device": {},
-      "cordova-plugin-splashscreen": {}
+      "cordova-plugin-splashscreen": {},
+      "com.mindlight.notifications": {}
     },
     "platforms": [
       "android"

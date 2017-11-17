@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-    id="mi-plugin"
-    version="1.0.0">
-    <name>Cordova Plugin Template</name>
+        id="com.mindlight.notifications"
+        version="0.0.1">
+    <name>Cordova Notification Plugin</name>
     <description></description>
     <license>MIT</license>
     <keywords></keywords>
-    <repo>https://github.com/thecouk/ionic-cordova-plugin-template.git</repo>
     
+    <engines>
+        <engine name="cordova" version=">=6.5.0"/>
+        <engine name="cordova-android" version=">=6.1.2"/>
+        <engine name="cordova-ios" version=">=4.3.1"/>
+    </engines>
 
+    <dependency id="cordova-plugin-device" />
+    <dependency id="cordova-plugin-app-event" />
     <!-- android -->
     <platform name="android">
       <js-module src="www/plugin.js" name="plugin">

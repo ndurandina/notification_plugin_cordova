@@ -1,12 +1,32 @@
 {
-  "name": "cordova-plugin-plantilla",
-  "version": "1.0.0",
+  "name": "com.harman.cordova.plugin.notifications",
+  "cordova_name": "Cordova Notification Plugin",
+  "version": "0.0.1",
+  "description": "Notifications handling on iOS and Android",
   "cordova": {
-    "id": "cordova-plugin-plantilla",
+    "id": "cordova-notifications-plugin",
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ]
   },
-  "description": "Plantilla base para crear un Plugin personalizado"
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=6.4.0"
+    },
+    {
+      "name": "cordova-ios",
+      "version": ">=4.3.0"
+    },
+    {
+      "name": "cordova-android",
+      "version": ">=6.0.0"
+    }
+  ],
+  "dependencies": {
+    "cordova-plugin-device": "*",
+    "cordova-plugin-app-event": ">=1.1.0"
+  },
+  "license": "MIT"
 }

@@ -4,3 +4,11 @@
 // Copyright (c) Microsoft Corporation
 // All rights reserved.
 // Licensed under the MIT license.
+
+interface Window {
+    MiPlugin: MiCordovaPlugin;
+}
+
+interface MiCordovaPlugin {
+    showMessage(name :string, packageSuccess: any, packageError?: any): void;
+}

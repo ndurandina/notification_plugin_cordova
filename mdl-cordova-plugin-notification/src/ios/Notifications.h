@@ -1,6 +1,6 @@
 #import <Cordova/CDVPlugin.h>
 
-@interface MiPlugin : CDVPlugin {
+@interface Notifications : CDVPlugin {
 }
 
 // Encabezados de las funciones del plugin

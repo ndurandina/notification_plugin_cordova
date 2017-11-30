@@ -5,14 +5,14 @@
 
 declare var cordova: Cordova;
 
-class MiPlugin implements MiCordovaPlugin {
+class Notifications implements NotificationsCordovaPlugin {
 
-    private static PLUGIN_NAME: string = 'MiPlugin';
+    private static PLUGIN_NAME: string = 'Notifications';
 
     public showMessage(name: string, notifySucceeded?: any, notifyFailed?: any): void {
-        cordova.exec(notifySucceeded, notifyFailed, MiPlugin.PLUGIN_NAME, "showMessage", [name]);
+        cordova.exec(notifySucceeded, notifyFailed, Notifications.PLUGIN_NAME, "showMessage", [name]);
     }
 }
 
-var instance = new MiPlugin();
+var instance = new Notifications();
 export = instance;

@@ -10,8 +10,8 @@ angular.module('starter.controllers', [])
   };
 
   $scope.newMessage = function() {
-    if(window.MiPlugin) {
-      window.MiPlugin.showMessage('I am alive!', $scope.successCallback, $scope.errorCallback);
+    if(window.Notifications) {
+      window.Notifications.showMessage('I am alive!', $scope.successCallback, $scope.errorCallback);
     } else {
       alert("Error. There is no plugin");
     }

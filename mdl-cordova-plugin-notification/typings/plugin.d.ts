@@ -6,9 +6,9 @@
 // Licensed under the MIT license.
 
 interface Window {
-    MiPlugin: MiCordovaPlugin;
+    Notifications: NotificationsCordovaPlugin;
 }
 
-interface MiCordovaPlugin {
+interface NotificationsCordovaPlugin {
     showMessage(name :string, packageSuccess: any, packageError?: any): void;
 }

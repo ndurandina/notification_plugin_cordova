@@ -8,20 +8,14 @@
 
 
 "use strict";
-var MiPlugin = (function () {
-    function MiPlugin() {
+var Notifications = (function () {
+    function Notifications() {
     }
-    MiPlugin.prototype.showMessage = function (name, notifySucceeded, notifyFailed) {
-        cordova.exec(notifySucceeded, notifyFailed, MiPlugin.PLUGIN_NAME, "showMessage", [name]);
+    Notifications.prototype.showMessage = function (name, notifySucceeded, notifyFailed) {
+        cordova.exec(notifySucceeded, notifyFailed, Notifications.PLUGIN_NAME, "showMessage", [name]);
     };
-    MiPlugin.PLUGIN_NAME = 'MiPlugin';
-    return MiPlugin;
+    Notifications.PLUGIN_NAME = 'Notifications';
+    return Notifications;
 }());
-var ReportStatus;
-(function (ReportStatus) {
-    ReportStatus[ReportStatus["STORE_VERSION"] = 0] = "STORE_VERSION";
-    ReportStatus[ReportStatus["UPDATE_CONFIRMED"] = 1] = "UPDATE_CONFIRMED";
-    ReportStatus[ReportStatus["UPDATE_ROLLED_BACK"] = 2] = "UPDATE_ROLLED_BACK";
-})(ReportStatus || (ReportStatus = {}));
-var instance = new MiPlugin();
+var instance = new Notifications();
 module.exports = instance;

@@ -16,8 +16,8 @@ import android.util.Log;
 
 import java.util.Date;
 
-public class MiPlugin extends CordovaPlugin {
-  private static final String TAG = "MiPlugin";
+public class Notifications extends CordovaPlugin {
+  private static final String TAG = "Notifications";
 
   public void initialize(CordovaInterface cordova, CordovaWebView webView) {
     super.initialize(cordova, webView);
@@ -26,7 +26,7 @@ public class MiPlugin extends CordovaPlugin {
   public boolean execute(String action, JSONArray args, final CallbackContext callbackContext) throws JSONException {
     if(action.equals("showMessage")) {
       // An example of returning data back to the web layer
-       String message = args.getString(0);
+      String message = args.getString(0);
       // Echo back the first argument      
       final PluginResult result = new PluginResult(PluginResult.Status.OK, "Message: "+ message);
       callbackContext.sendPluginResult(result);

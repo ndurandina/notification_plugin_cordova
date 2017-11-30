@@ -1,8 +1,8 @@
-#import "MiPlugin.h"
+#import "Notifications.h"
 
 #import <Cordova/CDVAvailability.h>
 
-@implementation MiPlugin
+@implementation Notifications
 
 - (void)pluginInitialize {
 }

@@ -36,7 +36,7 @@
 
     <!-- ios -->
     <platform name="ios">
-        <js-module src="www/plugin.js" name="plugin">
+        <js-module src="bin/www/plugin.js" name="plugin">
             <runs/>
             <clobbers target="Notifications" />
         </js-module>

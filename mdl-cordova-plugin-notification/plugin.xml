@@ -18,7 +18,7 @@
     <dependency id="cordova-plugin-app-event" />
     <!-- android -->
     <platform name="android">
-      <js-module src="www/plugin.js" name="plugin">
+      <js-module src="bin/www/plugin.js" name="plugin">
         <runs/>
 
         <!-- Este es el nombre por el cual se accedera el plugin -->
